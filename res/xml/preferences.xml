@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Analysis Service" >
+        <EditTextPreference
+            android:defaultValue="https://androlyzer.com/api/mobile"
+            android:key="serviceURL"
+            android:inputType="textUri|textNoSuggestions"
+            android:summary="Please enter service url"
+            android:title="Service URL" >
+        </EditTextPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

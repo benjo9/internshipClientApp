@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="label_app_detail">App details</string>
+    <string name="label_preference">Settings</string>
+    <string name="app_name">Androlyzer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_refresh">Sync apps</string>
+    <string name="menu_qrsync">Push to browser</string>
+    <string name="menu_share">Share</string>
+    <string name="list_nodata">No data</string>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/appicon"
+    android:layout_marginTop="35dp" >
+
+    <ImageView
+        android:id="@+id/app_list_item_icon"
+        android:contentDescription="App icon"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="11dip"
+        android:layout_marginRight="11dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/app_list_item_packagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/appicon"
+            android:shadowColor="#ffffff"
+            android:shadowDx="0"
+            android:shadowDy="-2"
+            android:shadowRadius="0.5"
+            android:text="app name"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#b90000" >
+        </TextView>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/app_list_item_versiontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/app_list_item_packagename"
+                    android:text="Version" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/app_list_item_versioncode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="version code" >
+                </TextView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="18dp"
+        android:layout_height="fill_parent" >
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right"
+            android:background="@drawable/shadow_gradient" />
+
+        <View
+            android:id="@+id/app_list_item_active_indicator"
+            android:visibility="invisible"
+            android:layout_width="18dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_list_indicator" />
+    </FrameLayout>
+
+</LinearLayout>
